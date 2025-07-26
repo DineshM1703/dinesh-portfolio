@@ -1,0 +1,119 @@
+/* style.css — Tim Hopper-style Minimal Portfolio */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 60px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+p, li, a {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 30px 10px 10px;
+}
+
+.site-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+nav a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* List Style Section */
+.list-layout {
+  list-style: none;
+  padding: 0;
+}
+
+.list-layout li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.list-layout li img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.list-layout li a {
+  display: inline-block;
+  color: #0077cc;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  padding: 30px 0;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+/* Contact links */
+#contact a {
+  margin-right: 10px;
+  color: #0077cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .list-layout li {
+    flex-direction: column;
+  }
+
+  .list-layout li img {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    font-size: 0.85rem;
+  }
+}
